@@ -235,7 +235,7 @@
 	</property>
 	<property class="Action1"> <!-- UseAction -->
 		<property name="Class" value="Repair"/>
-		<property name="Delay" value=".5"/> <!-- Repair actions still need the delay amount -->
+		<property name="Delay" value=".1"/> <!-- Repair actions still need the delay amount -->
 		<property name="Repair_amount" value="1000"/>
 		<property name="Upgrade_hit_offset" value="-5"/>
 		<property name="Repair_action_sound" value="nailgun_fire"/>

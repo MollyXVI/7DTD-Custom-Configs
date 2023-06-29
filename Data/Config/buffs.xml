@@ -7241,7 +7241,7 @@
 		</effect_group>
 
 		<effect_group>
-			<passive_effect name="RunSpeed" operation="perc_add" value=".5"/>
+			<passive_effect name="RunSpeed" operation="perc_add" value="1.0"/>
 			<passive_effect name="WaterLossPerStaminaPointGained" operation="perc_add" value="1.2"/> <!-- regening stamina costs you water -->
 			<!--<passive_effect name="StaminaLossMaxMult" operation="perc_add" value="1.2"/> --><!-- regening stamina costs food, blacks out the stamina bar -->
 		</effect_group>

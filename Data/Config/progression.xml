@@ -5,7 +5,7 @@
 
 <progression>
 
-<level max_level="300" exp_to_level="10000" experience_multiplier="1.05" skill_points_per_level="1" clamp_exp_cost_at_level="60">
+<level max_level="300" exp_to_level="10000" experience_multiplier="1.05" skill_points_per_level="2" clamp_exp_cost_at_level="60">
 <!-- Note: max_level is referenced in buffNearDeathTraumaXXX and entityclasses -->
 <!-- XP to complete the current level will cap out at 2^32/2. (lvl 252 in A18) -->
 </level>
