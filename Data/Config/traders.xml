@@ -1306,7 +1306,7 @@
 <!-- XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX -->
 
 <!-- *** Trader Joel ID:1 Specialty: Clothes and Armor -->
-	<trader_info id="1" reset_interval="3" open_time="4:05" close_time="4:00">
+	<trader_info id="1" reset_interval="3" open_time="6:05" close_time="21:50">
 		
 		<!-- *** Specialty -->
 		<trader_items>
@@ -1346,7 +1346,7 @@
 	</trader_info>
 	
 <!-- *** Trader Bob ID:6 Specialty: Tools and Vehicles -->
-	<trader_info id="6" reset_interval="3" open_time="4:05" close_time="4:00">
+	<trader_info id="6" reset_interval="3" open_time="6:05" close_time="21:50">
 		<!-- *** Specialty -->
 		<trader_items count="all">
 			<item group="groupVehicles" unique_only="true" count="2"/>
@@ -1384,7 +1384,7 @@
 	</trader_info>
 
 <!-- *** Trader Jen ID:2 Specialty: Medical and Books -->
-	<trader_info id="2" reset_interval="3" open_time="4:05" close_time="4:00">
+	<trader_info id="2" reset_interval="3" open_time="6:05" close_time="21:50">
 		<!-- *** Specialty -->
 		<trader_items count="all">
 			<item name="resourceCropAloeLeaf" count="2,5"/>
@@ -1425,7 +1425,7 @@
 	</trader_info>
 
 <!-- *** Trader Hugh ID:7 Specialty: Guns & Ammo -->
-	<trader_info id="7" reset_interval="3" open_time="4:05" close_time="4:00">
+	<trader_info id="7" reset_interval="3" open_time="6:05" close_time="21:50">
 		
 		<!-- *** Specialty -->
 		<trader_items count="all">
@@ -1466,7 +1466,7 @@
 	</trader_info>
 
 <!-- *** Trader Rekt ID:8 Specialty: Food & Farming -->
-	<trader_info id="8" reset_interval="3" open_time="4:05" close_time="4:00">
+	<trader_info id="8" reset_interval="3" open_time="6:05" close_time="21:50">
 		<!-- *** Specialty -->
 		<trader_items count="all">
 			<item group="seeds" unique_only="true" count="2,5" />
@@ -1528,7 +1528,7 @@
 
 
 <!-- *** Play_Test_Trader ID:9 -->
-	<trader_info id="9" reset_interval="3" open_time="4:05" close_time="4:00">
+	<trader_info id="9" reset_interval="3" open_time="6:05" close_time="21:50">
 	
 	<!-- Copy of trader Joel, but can be used for testing other item lists in a play test session -->
 	
