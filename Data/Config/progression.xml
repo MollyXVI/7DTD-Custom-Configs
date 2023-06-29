@@ -5,7 +5,7 @@
 
 <progression>
 
-<level max_level="300" exp_to_level="10000" experience_multiplier="1.05" skill_points_per_level="2" clamp_exp_cost_at_level="60">
+<level max_level="300" exp_to_level="10000" experience_multiplier="1.05" skill_points_per_level="1" clamp_exp_cost_at_level="60">
 <!-- Note: max_level is referenced in buffNearDeathTraumaXXX and entityclasses -->
 <!-- XP to complete the current level will cap out at 2^32/2. (lvl 252 in A18) -->
 </level>
@@ -570,7 +570,7 @@
 		<display_entry icon="resourceLeather" name_key="armorT2" has_quality="true" unlock_level="11,17,24,31,38" >
 			<unlock_entry item="armorLeatherMaster,armorIronMaster" unlock_tier="1" recipes="armorLeatherHood,armorLeatherChest,armorLeatherGloves,armorLeatherPants,armorLeatherBoots,armorIronMaster,armorIronHelmet,armorIronChest,armorIronGloves,armorIronLegs,armorIronBoots" />
 		</display_entry>
-		<display_entry icon="resourceForgedIron" name_key="armorT3" has_quality="true" unlock_level="39,48,57,66,75" >
+		<display_entry icon="resourceMilitaryFiber" name_key="armorT3" has_quality="true" unlock_level="39,48,57,66,75" >
 			<unlock_entry item="armorMilitaryMaster,armorSteelMaster,resourceMilitaryFiber" unlock_tier="1" recipes="armorMilitaryHelmet,armorMilitaryVest,armorMilitaryGloves,armorMilitaryLegs,armorMilitaryBoots,armorSteelMaster,armorSteelHelmet,armorSteelChest,armorSteelGloves,armorSteelLegs,armorSteelBoots,resourceMilitaryFiber" />
 		</display_entry>
 

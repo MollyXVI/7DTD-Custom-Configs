@@ -5454,6 +5454,13 @@
 	<AudioClip ClipName="Sounds/Doors/gate_chainlink_close1"/>
 	<LocalCrouchVolumeScale value="0.5"/> <CrouchNoiseScale value="0.5"/> <NoiseScale value="1"/> <MaxVoices value="10"/> <MaxRepeatRate value="0.01"/> </SoundDataNode>
 
+<SoundDataNode name="gate_chainlink_locked"> <AudioSource name="Sounds/AudioSource_Interact"/>
+	<Noise ID="1" noise="7" time="3" muffled_when_crouched="0.5"/>
+	<AudioClip ClipName="Sounds/Doors/gate_chainlink_locked1"/>
+	<LowestPitch name="0.9"/>
+	<HighestPitch name="1.1"/>
+	<LocalCrouchVolumeScale value="1.0"/> <CrouchNoiseScale value="0.5"/> <NoiseScale value="1"/> <MaxVoices value="3"/> <MaxRepeatRate value="0.824"/> </SoundDataNode>
+
 <!-- End of Chain Link Doors & Gates -->
 
 <!-- Trader Gates -->
@@ -5467,6 +5474,13 @@
 	<Noise ID="3" noise="30" time="3" muffled_when_crouched="0.65" heat_map_strength="0.05" heat_map_time="60"/>
 	<AudioClip ClipName="Sounds/Doors/gate_wood_large_close1"/>
 	<LocalCrouchVolumeScale value="0.5"/> <CrouchNoiseScale value="0.5"/> <NoiseScale value="1"/> <MaxVoices value="10"/> <MaxRepeatRate value="0.01"/> </SoundDataNode>
+
+<SoundDataNode name="gate_wood_large_locked"> <AudioSource name="Sounds/AudioSource_Interact"/>
+	<Noise ID="1" noise="7" time="3" muffled_when_crouched="0.5"/>
+	<AudioClip ClipName="Sounds/Doors/gate_wood_large_locked1"/>
+	<LowestPitch name="0.9"/>
+	<HighestPitch name="1.1"/>
+	<LocalCrouchVolumeScale value="1.0"/> <CrouchNoiseScale value="0.5"/> <NoiseScale value="1"/> <MaxVoices value="3"/> <MaxRepeatRate value="1.42"/> </SoundDataNode>
 
 <SoundDataNode name="gate_chainlink_trader_open"> <AudioSource name="Sounds/AudioSource_Interact_Large"/>
 	<Noise ID="3" noise="30" time="3" muffled_when_crouched="0.65" heat_map_strength="0.05" heat_map_time="60"/>

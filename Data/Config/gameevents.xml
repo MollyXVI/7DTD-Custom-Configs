@@ -2271,6 +2271,7 @@
 		<variable name="twitchsound" value="" />
 		<variable name="addbuff" value="twitch_buffCelebrate" />
 		<variable name="removebuff" value="" />
+		<variable name="twitch_negative" value="false" />
 	</action_sequence>
 	
 	<action_sequence name="action_degrade">

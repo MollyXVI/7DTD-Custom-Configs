@@ -670,21 +670,21 @@
 	
 <!-- *** Quest_Loot_Probability_Templates -->
 	<lootprobtemplate name="QuestT1Prob">
-		<loot level="0,1" prob="0.17"/>
-		<loot level="2" prob="0.33"/>
-		<loot level="3" prob="0.5"/>
+		<loot level="0,1" prob="0.05"/>
+		<loot level="2" prob="0.25"/>
+		<loot level="3" prob="0.65"/>
 		<loot level="4,7" prob="0"/>
 	</lootprobtemplate>
 	<lootprobtemplate name="QuestT2Prob">
 		<loot level="1,2" prob="0"/>
-		<loot level="3" prob="0.33"/>
-		<loot level="4" prob="0.42"/>
+		<loot level="3" prob="0.35"/>
+		<loot level="4" prob="0.65"/>
 		<loot level="5,7" prob="0"/>
 	</lootprobtemplate>
 	<lootprobtemplate name="QuestT3Prob">
 		<loot level="1,4" prob="0"/>
-		<loot level="5" prob="0.58"/>
-		<loot level="6,7" prob="0.17"/>
+		<loot level="5" prob="0.75"/>
+		<loot level="6,7" prob="0.25"/>
 	</lootprobtemplate>
 	
 </lootprobtemplates>
@@ -1121,44 +1121,58 @@ If there is no hit the default quality is used.
 	<lootqualitytemplate name="qualTwitchT2Template">
 		<qualitytemplate level="1,999999" default_quality="2"/>
 	</lootqualitytemplate>
-	
 	<lootqualitytemplate name="qualTwitchT3Template">
 		<qualitytemplate level="1,999999" default_quality="3"/>
 	</lootqualitytemplate>
-	
 	<lootqualitytemplate name="qualTwitchT4Template">
 		<qualitytemplate level="1,999999" default_quality="4"/>
 	</lootqualitytemplate>
-	
 	<lootqualitytemplate name="qualTwitchT5Template">
 		<qualitytemplate level="1,999999" default_quality="5"/>
 	</lootqualitytemplate>
-	
 	<lootqualitytemplate name="qualTwitchT6Template">
 		<qualitytemplate level="1,999999" default_quality="6"/>
 	</lootqualitytemplate>
-	
 </lootqualitytemplates>
 
+<!-- *** Quest_Loot_Quality_Templates -->
 <lootqualitytemplates>
 	<lootqualitytemplate name="questT1QualTemplate">
-		<qualitytemplate level="0,1" default_quality="2"><loot quality="2" prob="1"/></qualitytemplate>
-		<qualitytemplate level="2,2" default_quality="2"><loot quality="2" prob="0.5"/><loot quality="3" prob="1"/></qualitytemplate>
-		<qualitytemplate level="3,7" default_quality="3"><loot quality="3" prob="0.333"/><loot quality="4" prob="0.5"/><loot quality="5" prob="1"/></qualitytemplate>
+		<qualitytemplate level="0,1" default_quality="2">
+			<loot quality="2" prob="1"/>
+		</qualitytemplate>
+		<qualitytemplate level="2,2" default_quality="2">
+			<loot quality="2" prob="0.5"/>
+			<loot quality="3" prob="0.5"/>
+		</qualitytemplate>
+		<qualitytemplate level="3,7" default_quality="3">
+			<loot quality="3" prob="0.3"/>
+			<loot quality="4" prob="0.4"/>
+			<loot quality="5" prob="0.3"/>
+		</qualitytemplate>
 	</lootqualitytemplate>
-</lootqualitytemplates>
 
-<lootqualitytemplates>
 	<lootqualitytemplate name="questT2QualTemplate">
-		<qualitytemplate level="0,3" default_quality="3"><loot quality="3" prob="0.5"/><loot quality="4" prob="1"/></qualitytemplate>
-		<qualitytemplate level="4,7" default_quality="4"><loot quality="4" prob="0.4"/><loot quality="5" prob="0.667"/><loot quality="6" prob="1"/></qualitytemplate>
+		<qualitytemplate level="0,3" default_quality="3">
+			<loot quality="3" prob="0.5"/>
+			<loot quality="4" prob="0.5"/>
+		</qualitytemplate>
+		<qualitytemplate level="4,7" default_quality="4">
+			<loot quality="4" prob="0.3"/>
+			<loot quality="5" prob="0.4"/>
+			<loot quality="6" prob="0.3"/>
+		</qualitytemplate>
 	</lootqualitytemplate>
-</lootqualitytemplates>
-
-<lootqualitytemplates>
+	  
 	<lootqualitytemplate name="questT3QualTemplate">
-		<qualitytemplate level="0,5" default_quality="3"><loot quality="3" prob="0.286"/><loot quality="4" prob="0.4"/><loot quality="5" prob="0.667"/><loot quality="6" prob="1"/></qualitytemplate>
-		<qualitytemplate level="6,7" default_quality="6"><loot quality="6" prob="1"/></qualitytemplate>
+		<qualitytemplate level="0,5" default_quality="4">
+			<loot quality="4" prob="0.3"/>
+			<loot quality="5" prob="0.5"/>
+			<loot quality="6" prob="0.1"/>
+		</qualitytemplate>
+		<qualitytemplate level="6,7" default_quality="6">
+			<loot quality="6" prob="1"/>
+		</qualitytemplate>
 	</lootqualitytemplate>
 </lootqualitytemplates>
 
@@ -4340,8 +4354,8 @@ If there is no hit the default quality is used.
 	<item name="vehicleBicyclePlaceable" loot_prob_template="QuestT2Prob"/>
 </lootgroup>
 
-<lootgroup name="groupQuestT1SkillMagazineBundle" count="all">
-	<item name="questRewardT1SkillMagazineBundle" loot_prob_template="QuestT2Prob"/>
+<lootgroup name="groupQuestT1SkillMagazineBundle">
+	<item name="questRewardT1SkillMagazineBundle"/>
 </lootgroup>
 
 <lootgroup name="groupQuestMinibikeParts" count="all">

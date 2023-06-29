@@ -18899,6 +18899,7 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 	<property name="Class" value="DoorSecure"/>
 	<property name="OpenSound" value="gate_wood_large_open"/>
 	<property name="CloseSound" value="gate_wood_large_close"/>
+	<property name="LockedSound" value="gate_wood_large_locked"/>
 	<property name="IndexName" value="TraderOnOff"/>
 	<!-- UI_Info -->
 	<property name="DescriptionKey" value="doorGroupDesc"/>
@@ -19189,6 +19190,7 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 	<property name="Class" value="DoorSecure"/>
 	<property name="OpenSound" value="gate_chainlink_trader_open"/>
 	<property name="CloseSound" value="gate_chainlink_trader_close"/>
+	<property name="LockedSound" value="gate_chainlink_locked"/>
 	<property name="IndexName" value="TraderOnOff"/>
 	<!-- UI_Info -->
 	<property name="DescriptionKey" value="doorGroupDesc"/>
@@ -19238,6 +19240,7 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 	<property name="Class" value="DoorSecure"/>
 	<property name="OpenSound" value="gate_chainlink_open"/>
 	<property name="CloseSound" value="gate_chainlink_close"/>
+	<property name="LockedSound" value="gate_chainlink_locked"/>
 	<property name="IndexName" value="TraderOnOff"/>
 	<!-- UI_Info -->
 	<property name="DescriptionKey" value="doorGroupDesc"/>
@@ -19292,6 +19295,7 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 	<property name="Class" value="DoorSecure"/>
 	<property name="OpenSound" value="door_chainlink_single_open"/>
 	<property name="CloseSound" value="door_chainlink_single_close"/>
+	<property name="LockedSound" value="gate_chainlink_locked"/>
 	<property name="IndexName" value="TraderOnOff"/>
 	<!-- UI_Info -->
 	<property name="DescriptionKey" value="doorGroupNoUpgradeDesc"/>
@@ -19340,6 +19344,7 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 	<property name="Class" value="DoorSecure"/>
 	<property name="OpenSound" value="door_chainlink_double_open"/>
 	<property name="CloseSound" value="door_chainlink_double_close"/>
+	<property name="LockedSound" value="gate_chainlink_locked"/>
 	<property name="IndexName" value="TraderOnOff"/>
 	<!-- UI_Info -->
 	<property name="DescriptionKey" value="doorGroupNoUpgradeDesc"/>
@@ -20171,9 +20176,9 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 	<property name="FilterTags" value="MC_outdoor,SC_decor"/>
 </block>
 
-<block name="corrugatedMetalSheetBent1">
+<block name="corrugatedMetalSheetBent1"><!-- REPLACE_AND_REMOVE -->
 	<property name="Extends" value="corrugatedMetalNoUpgradeMaster"/>
-	<property name="CreativeMode" value="Dev"/>
+	<property name="CreativeMode" value="None"/>
 	<property name="Shape" value="New"/>
 	<property name="Model" value="shantyWall01"/>
 	<property name="UseGlobalUV" value="Local"/>
@@ -20185,25 +20190,25 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 	<property name="SortOrder2" value="0005"/>
 </block>
 
-<block name="corrugatedMetalSheetBent2">
+<block name="corrugatedMetalSheetBent2"><!-- REPLACE_AND_REMOVE -->
 	<property name="Extends" value="corrugatedMetalSheetBent1"/>
-	<property name="CreativeMode" value="Dev"/>
+	<property name="CreativeMode" value="None"/>
 	<property name="Model" value="shantyWall02"/>
 	<property name="SortOrder1" value="B257"/>
 	<property name="SortOrder2" value="0006"/>
 </block>
 
-<block name="corrugatedMetalSheetBent3">
+<block name="corrugatedMetalSheetBent3"><!-- REPLACE_AND_REMOVE -->
 	<property name="Extends" value="corrugatedMetalSheetBent1"/>
-	<property name="CreativeMode" value="Dev"/>
+	<property name="CreativeMode" value="None"/>
 	<property name="Model" value="shantyWall03"/>
 	<property name="SortOrder1" value="B257"/>
 	<property name="SortOrder2" value="0007"/>
 </block>
 
-<block name="corrugatedMetalSheetBent4">
+<block name="corrugatedMetalSheetBent4"><!-- REPLACE_AND_REMOVE -->
 	<property name="Extends" value="corrugatedMetalSheetBent1"/>
-	<property name="CreativeMode" value="Dev"/>
+	<property name="CreativeMode" value="None"/>
 	<property name="Model" value="shantyWall04"/>
 	<property name="SortOrder1" value="B257"/>
 	<property name="SortOrder2" value="0008"/>
@@ -20229,9 +20234,9 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 	<property name="FilterTags" value="MC_helpers,SC_helperOutdoor"/>
 </block>
 
-<block name="woodFenceSheetBent1">
+<block name="woodFenceSheetBent1"><!-- REPLACE_AND_REMOVE -->
 	<property name="Extends" value="woodFenceSheet"/>
-	<property name="CreativeMode" value="Dev"/>
+	<property name="CreativeMode" value="None"/>
 	<property name="CustomIcon" value="woodFenceSheet"/>
 	<property name="Model" value="shantyWall01"/>
 	<property name="WaterFlow" value="permitted"/>
@@ -20240,25 +20245,25 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 	<property name="SortOrder2" value="0010"/>
 </block>
 
-<block name="woodFenceSheetBent2">
+<block name="woodFenceSheetBent2"><!-- REPLACE_AND_REMOVE -->
 	<property name="Extends" value="woodFenceSheetBent1"/>
-	<property name="CreativeMode" value="Dev"/>
+	<property name="CreativeMode" value="None"/>
 	<property name="Model" value="shantyWall02"/>
 	<property name="SortOrder1" value="B257"/>
 	<property name="SortOrder2" value="0011"/>
 </block>
 
-<block name="woodFenceSheetBent3">
+<block name="woodFenceSheetBent3"><!-- REPLACE_AND_REMOVE -->
 	<property name="Extends" value="woodFenceSheetBent1"/>
-	<property name="CreativeMode" value="Dev"/>
+	<property name="CreativeMode" value="None"/>
 	<property name="Model" value="shantyWall03"/>
 	<property name="SortOrder1" value="B257"/>
 	<property name="SortOrder2" value="0012"/>
 </block>
 
-<block name="woodFenceSheetBent4">
+<block name="woodFenceSheetBent4"><!-- REPLACE_AND_REMOVE -->
 	<property name="Extends" value="woodFenceSheetBent1"/>
-	<property name="CreativeMode" value="Dev"/>
+	<property name="CreativeMode" value="None"/>
 	<property name="Model" value="shantyWall04"/>
 	<property name="SortOrder1" value="B257"/>
 	<property name="SortOrder2" value="0013"/>
@@ -25989,6 +25994,9 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 	<property name="EconomicBundleSize" value="1"/>
 	<property name="SellableToTrader" value="false"/>
 	<property name="MaxDamage" value="200"/>
+	<property name="HeatMapStrength" value="2"/>
+	<property name="HeatMapTime" value="5000"/>
+	<property name="HeatMapFrequency" value="1000"/>
 	<property class="RepairItems">
 		<property name="resourceScrapPolymers" value="20"/>
 	</property>
@@ -26157,7 +26165,7 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 	<property name="TraderStageTemplate" value="midTier1"/>
 	<!-- Interaction -->
 	<property name="MaxDamage" value="800"/>
-	<property name="HeatMapStrength" value="2"/>
+	<property name="HeatMapStrength" value="5"/>
 	<property name="HeatMapTime" value="5000"/>
 	<property name="HeatMapFrequency" value="1000"/>
 	<property name="OpenSound" value="open_workbench"/>
@@ -26288,7 +26296,7 @@ MC_playerBlocks - SC_electrical,SC_traps,SC_decor,SC_playerHelpers
 	<property name="TraderStageTemplate" value="midTier1"/>
 	<!-- Interaction -->
 	<property name="MaxDamage" value="800"/>
-	<property name="HeatMapStrength" value="2"/>
+	<property name="HeatMapStrength" value="5"/>
 	<property name="HeatMapTime" value="5000"/>
 	<property name="HeatMapFrequency" value="1000"/>
 	<property name="OpenSound" value="cement_mixer_open"/>

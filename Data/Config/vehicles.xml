@@ -1,6 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!-- Defines the physical attributes of a vehicle -->
 
+<!-- 
+	motorTorque, velocityMax, turboScale are "forward, backward"
+	turboScale effects motorTorque and velocityMax
+-->
+
 <!-- gear definition
 	RPM values: min, max,  decelerate, down shift point, shift to,  accelerate, up shift point, shift to
 	500,2500, -1400,800,0, 700,2200,900,
@@ -32,9 +37,6 @@ Forces:
 
 		<property name="cameraDistance" value="6, 8"/>
 		<property name="cameraTurnRate" value=".2, .35"/>
-		<property name="motorTorqueMinQ" value="1"/>
-		<property name="motorTorqueMaxQ" value="1"/>
-		<property name="brakeTorque" value="10"/>
 		<property name="steerRate" value="130"/>
 		<property name="steerCenteringRate" value="90"/>
 
@@ -46,8 +48,11 @@ Forces:
 		<property name="upAngleMax" value="60"/>
 		<property name="upForce" value=".5"/>
 
+		<property name="motorTorque" value="1, 1"/>
+		<property name="turboScale" value="1.67, 1"/>
+		<property name="velocityMax" value="9, 9"/>
+		<property name="brakeTorque" value="10"/>
 		<property name="unstickForce" value="1"/>
-		<property name="velocityMax" value="15, 30"/>
 		<property name="airDrag_velScale_angVelScale" value=".997, .97"/>
 		<property name="waterDrag_y_velScale_velMaxScale" value="1.5, .9, 1"/>
 		<property name="waterLift_y_depth_force" value="1, .5, .1"/>
@@ -188,9 +193,6 @@ Forces:
 
 		<property name="cameraDistance" value="9, 11"/>
 		<property name="cameraTurnRate" value=".2, .35"/>
-		<property name="motorTorqueMinQ" value="5000"/>
-		<property name="motorTorqueMaxQ" value="5000"/>
-		<property name="brakeTorque" value="5000"/>
 		<property name="upAngleMax" value="3"/>
 		<property name="upForce" value="1"/>
 		<property name="steerRate" value="130"/>
@@ -200,8 +202,12 @@ Forces:
 		<property name="tiltDampening" value=".01"/>
 		<property name="tiltDampenThreshold" value="1"/>
 		<property name="tiltUpForce" value="1"/>
+		
+		<property name="motorTorque" value="5000, 5000"/>
+		<property name="turboScale" value="1.44, 1"/>
+		<property name="velocityMax" value="18, 18"/>
+		<property name="brakeTorque" value="5000"/>
 		<property name="unstickForce" value="1"/>
-		<property name="velocityMax" value="18, 26"/>
 		<property name="waterY_VelMaxScale" value="2, .2"/>
 
 		<property name="hornSound" value="minibike_horn"/>
@@ -266,23 +272,25 @@ Forces:
 
 		<property name="cameraDistance" value="3, 4.5"/>
 		<property name="cameraTurnRate" value=".2, .35"/>
-		<property name="motorTorqueMinQ" value="1000"/>
-		<property name="motorTorqueMaxQ" value="1000"/>
-		<property name="brakeTorque" value="4000"/>
 		<property name="upAngleMax" value="70"/>
 		<property name="upForce" value="1"/>
 		<property name="steerAngleMax" value="28"/>
-		<property name="steerRate" value="100"/>	<!-- Default: 130 -->
-		<property name="steerCenteringRate" value="60"/>	<!-- Default: 90 -->
+		<property name="steerRate" value="130"/>
+		<property name="steerCenteringRate" value="90"/>
 		<property name="tiltAngleMax" value="20"/>
 		<property name="tiltThreshold" value="3"/>
 		<property name="tiltDampening" value=".22"/>
 		<property name="tiltDampenThreshold" value="8"/>
 		<property name="tiltUpForce" value="5"/>
+
+		<property name="motorTorque" value="500, 180"/>
+		<property name="turboScale" value="1.5, 1"/>
+		<property name="velocityMax" value="6, 4"/>
+		<property name="brakeTorque" value="3000"/>
 		<property name="hopForce" value="4, .05"/>
 		<property name="unstickForce" value=".2"/>
-		<property name="velocityMax" value="15, 20"/>
 		<property name="waterDrag_y_velScale_velMaxScale" value="1.7, .9, .2"/>
+
 		<property name="wheelPtlScale" value=".6"/>
 
 		<property name="hornSound" value="bicycle_horn"/>
@@ -355,21 +363,22 @@ Forces:
 
 		<property name="cameraDistance" value="3, 4.5"/>
 		<property name="cameraTurnRate" value=".2, .35"/>
-		<property name="motorTorqueMinQ" value="1000"/>
-		<property name="motorTorqueMaxQ" value="1000"/>
-		<property name="brakeTorque" value="4000"/>
 		<property name="upAngleMax" value="70"/>
 		<property name="upForce" value="1"/>
-		<property name="steerRate" value="100"/>	<!-- Default: 130 -->
-		<property name="steerCenteringRate" value="60"/>	<!-- Default: 90 -->
+		<property name="steerRate" value="130"/>
+		<property name="steerCenteringRate" value="90"/>
 		<property name="tiltAngleMax" value="20"/>
 		<property name="tiltThreshold" value="3"/>
 		<property name="tiltDampening" value=".22"/>
 		<property name="tiltDampenThreshold" value="8"/>
 		<property name="tiltUpForce" value="5"/>
+
+		<property name="motorTorque" value="400, 200"/>
+		<property name="turboScale" value="1.4, 1"/>
+		<property name="velocityMax" value="7, 4"/>
+		<property name="brakeTorque" value="3000"/>
 		<property name="hopForce" value="1.5, .2"/>
 		<property name="unstickForce" value="1"/>
-		<property name="velocityMax" value="20, 25"/>
 		<property name="waterDrag_y_velScale_velMaxScale" value="1.5, .9, .15"/>
 		<property name="wheelPtlScale" value=".6"/>
 
@@ -474,21 +483,22 @@ Forces:
 
 		<property name="cameraDistance" value="3.5, 5"/>
 		<property name="cameraTurnRate" value=".2, .35"/>
-		<property name="motorTorqueMinQ" value="3000"/>
-		<property name="motorTorqueMaxQ" value="3000"/>
-		<property name="brakeTorque" value="4000"/>
 		<property name="upAngleMax" value="70"/>
 		<property name="upForce" value="1"/>
-		<property name="steerRate" value="100"/>	<!-- Default: 130 -->
-		<property name="steerCenteringRate" value="60"/>	<!-- Default: 90 -->
+		<property name="steerRate" value="130"/>
+		<property name="steerCenteringRate" value="90"/>
 		<property name="tiltAngleMax" value="20"/>
 		<property name="tiltThreshold" value="3"/>
 		<property name="tiltDampening" value=".22"/>
 		<property name="tiltDampenThreshold" value="8"/>
 		<property name="tiltUpForce" value="5"/>
+
+		<property name="motorTorque" value="1400, 500"/>
+		<property name="turboScale" value="1.5, 1.3"/>
+		<property name="velocityMax" value="9.33, 6"/>
+		<property name="brakeTorque" value="3000"/>
 		<property name="hopForce" value="1, .8"/>
 		<property name="unstickForce" value="1"/>
-		<property name="velocityMax" value="25, 30"/>
 		<property name="waterDrag_y_velScale_velMaxScale" value="1.7, .9, .1"/>
 		<property name="wheelPtlScale" value="1"/>
 
@@ -614,9 +624,6 @@ Forces:
 
 		<property name="cameraDistance" value="5.5, 7"/>
 		<property name="cameraTurnRate" value=".2, .35"/>
-		<property name="motorTorqueMinQ" value="5000"/>
-		<property name="motorTorqueMaxQ" value="5000"/>
-		<property name="brakeTorque" value="5000"/>
 		<property name="upAngleMax" value="70"/>
 		<property name="upForce" value="1"/>
 		<property name="steerRate" value="130"/>
@@ -626,8 +633,12 @@ Forces:
 		<property name="tiltDampening" value=".22"/>
 		<property name="tiltDampenThreshold" value="8"/>
 		<property name="tiltUpForce" value="0"/>
+
+		<property name="motorTorque" value="1800, 900"/>
+		<property name="turboScale" value="1.5, 1.3"/>
+		<property name="velocityMax" value="9.33, 9"/>
+		<property name="brakeTorque" value="4000"/>
 		<property name="unstickForce" value="1"/>
-		<property name="velocityMax" value="35, 40"/>
 		<property name="waterDrag_y_velScale_velMaxScale" value="1.8, .9, .1"/>
 		<property name="wheelPtlScale" value="1"/>
 

@@ -64,26 +64,29 @@ If the same player was level 10 and had survived 25 days and died 2x:
 	25 days - 2 x 2 (daysAliveChangeWhenKilled) = 21
 	Then daysAlive of 21 gets capped to player level so 10.
 
+This is how the game stage (GS) of a PARTY is calculated:
 
-This is how the game stage of a PARTY is calculated:
-The game stage of all (up to) 6 players is calculated.
-The players are sorted by game stage.
-
+The GS of all players in the party are calculated.
+The players are sorted by GS.
 The highest GS number is multiplied by "startingWeight".
 This then loops down the list and "startingWeight" is multiplied by "diminishingReturns" every time.
+The final result is then converted to an INT that rounds down.
 
 Example:
-Players with GS 120, 30, 60, 91, 5, 80.
-startingWeight= 1.7, diminishingReturns=0.5
+Players with GS 204, 30, 60, 91, 5, 1, 2, 80
+startingWeight= 1, diminishingReturns=0.5 (defined in this xml file below)
 
 So we get
-120 * 1.70 = 204
- 91 *  .85 =  77
- 80 *  .42 =  34
- 60 *  .21 =  13
- 30 *  .82 =  24
-  5 *  .11 =   1
-... or a total party GS of 353
+204 * 1.0000000 = 204
+ 91 * 0.5000000 = 45.5
+ 80 * 0.2500000 = 20
+ 60 * 0.1250000 = 7.5
+ 30 * 0.0625000 = 1.875
+  5 * 0.0312500 = 0.15625
+  2 * 0.0156250 = 0.03125
+  1 * 0.0078125 = 0.0078125
+
+...for a total of 279.0703125 which is then rounded down to a GS of 279
 
 - - - - - - -
 
