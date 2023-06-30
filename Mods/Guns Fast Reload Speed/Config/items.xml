@@ -29,13 +29,13 @@
 
 	<append xpath="/items/item[@name='gunMGT1AK47']/effect_group[@name='gunMGT1AK47']">
 
-		<passive_effect name="ReloadSpeedMultiplier" operation="base_set" value="1.5" tags="perkMachineGunner"/>3s
+		<passive_effect name="ReloadSpeedMultiplier" operation="base_set" value="1.5" tags="perkMachineGunner"/>3.5s
 
 	</append>
 
 	<append xpath="/items/item[@name='gunMGT2TacticalAR']/effect_group[@name='gunMGT2TacticalAR']">
 
-		<passive_effect name="ReloadSpeedMultiplier" operation="base_set" value="1.5" tags="perkMachineGunner"/>3s
+		<passive_effect name="ReloadSpeedMultiplier" operation="base_set" value="1.5" tags="perkMachineGunner"/>5s
 
 	</append>
 
