@@ -23,19 +23,19 @@
 
 	<append xpath="/items/item[@name='gunMGT0PipeMachineGun']/effect_group[@name='gunMGT0PipeMachineGun']">
 
-		<passive_effect name="ReloadSpeedMultiplier" operation="base_set" value="1.5" tags="perkMachineGunner"/>3s
+		<passive_effect name="ReloadSpeedMultiplier" operation="base_set" value="1.5" tags="perkMachineGunner"/>3.3s
 
 	</append>
 
 	<append xpath="/items/item[@name='gunMGT1AK47']/effect_group[@name='gunMGT1AK47']">
 
-		<passive_effect name="ReloadSpeedMultiplier" operation="base_set" value="1.5" tags="perkMachineGunner"/>3.5s
+		<passive_effect name="ReloadSpeedMultiplier" operation="base_set" value="1.5" tags="perkMachineGunner"/>3.2s
 
 	</append>
 
 	<append xpath="/items/item[@name='gunMGT2TacticalAR']/effect_group[@name='gunMGT2TacticalAR']">
 
-		<passive_effect name="ReloadSpeedMultiplier" operation="base_set" value="1.5" tags="perkMachineGunner"/>5s
+		<passive_effect name="ReloadSpeedMultiplier" operation="base_set" value="1.5" tags="perkMachineGunner"/>4.7s
 
 	</append>
 
